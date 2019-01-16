@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" href="fontawesome-free-5.3.1-web/css/all.css">
+<link rel="stylesheet" href="fontawesome-free-5.3.1-web/css/v4-shims.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.css">
+<link rel="stylesheet" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">Prueba de Serenity con ScreenPlay</span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="07a9c0c31b42959c2dc5fe686bd4c98b971bc3e7ac99b9705bfdcf9c213b7337.html">Post Tweet In A User Profile</a></span>
+                > <span class="truncate-60"><a
+                    href="d92c573ddb017bd01f187f1441aafcf05b693129aa4094f46f8d8d292795e762.html">Tweet in my profile. </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 15-01-2019 14:15</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Post Tweet In A User Profile </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                I as a Twitter user<br />
+I want to be able to post a tweet in a user profile<br />
+To invite you to a test automation course.
+                                </div>
+                            </div>
+
+                            <div class="requirementNarrative">Background: Access the social network Twitter
+                                    <p></p>
+                            </div>
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="ec3644e9342d32fe427f28bfa83a3084b3999493dbafdd95c2d0cbb278b71b7f.html">Tag
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Tweet in my profile.
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="8e205624ea1fa116c6548ff57991b02be738bb145376525bc8a26c39ebd98452.png" title="Given that you access the Twitter page and enter the credentials of 'danielcorrea1058@gmail.com' and 'danielcorrea1996'" width="1920"/>
+                <img src="46801a0cb894021e1f27e23f586ab2985ebaddd26a5507668da9e8fc2c035816.png" title="Daniel opens the Tw home page" width="1920"/>
+                <img src="46801a0cb894021e1f27e23f586ab2985ebaddd26a5507668da9e8fc2c035816.png" title="Daniel enters 'danielcorrea1058@gmail.com' into User" width="1920"/>
+                <img src="17a9841919bc32050649a218e418562f46bb0fc6ce09098a315d83cada339106.png" title="Daniel enters 'danielcorrea1058@gmail.com' into User" width="1920"/>
+                <img src="ef8f0e583da01e7274b88aeca16801d39b69dd1c5efc172ea100453edf02eab7.png" title="Daniel enters 'danielcorrea1058@gmail.com' into User" width="1920"/>
+                <img src="17a9841919bc32050649a218e418562f46bb0fc6ce09098a315d83cada339106.png" title="Daniel enters 'danielcorrea1058@gmail.com' into User" width="1920"/>
+                <img src="f777b54c84d619d1b140fc83497eedfb1cbfbda8ab84d1efa7c4154dbd596d10.png" title="Daniel enters 'danielcorrea1996' into Password" width="1920"/>
+                <img src="8e205624ea1fa116c6548ff57991b02be738bb145376525bc8a26c39ebd98452.png" title="Daniel enters 'danielcorrea1996' into Password" width="1920"/>
+                <img src="d31f17f5c898be71f7d6c988e460c9f744f9837962bda86612073e748f8c55fa.png" title="When you proceed to make a tweet 'Esto es una prueba Automatica'" width="1920"/>
+                <img src="7841e1519b156bb96cae287a52de7499100fe3c1424044c440e1709727d6a0f0.png" title="Daniel clicks on Tweet" width="1920"/>
+                <img src="7841e1519b156bb96cae287a52de7499100fe3c1424044c440e1709727d6a0f0.png" title="Daniel enters 'Esto es una prueba Automatica' into Text" width="1920"/>
+                <img src="6ff4f57f6e3e516388d6aaf9e92cf766b4484b07afcf9b9e42616ed0aefef2e9.png" title="Daniel enters 'Esto es una prueba Automatica' into Text" width="1920"/>
+                <img src="076cc221e500a1bd3c0a0102fe4709f934965922e2187973f1e5d3a9a7266a8a.png" title="Daniel clicks on Send" width="1920"/>
+                <img src="32bf2ef5c6fa1678b95e24e62b55811beb378dc755050be7041221320feb48e7.png" title="Daniel clicks on Send" width="1920"/>
+                <img src="e76044456da4848e5b254a33383e27656fcc3aade85604c75c406deaefcf3a30.png" title="Daniel clicks on Send" width="1920"/>
+                <img src="b22122f2902110c6d8c80cca78165411bd7d55a712f8d9c8e8a005e5083bcaa2.png" title="Daniel clicks on Send" width="1920"/>
+                <img src="b22122f2902110c6d8c80cca78165411bd7d55a712f8d9c8e8a005e5083bcaa2.png" title="Daniel clicks on Send" width="1920"/>
+                <img src="b555b9bfd02649e16638cc4a253f532572eed9767015eb41b117c078801af1a9.png" title="Daniel clicks on Send" width="1920"/>
+                <img src="ae706aa92885d55a0359b9968c122f8c1dc3857b4e31a3551e87b750f5a28adf.png" title="Then you should see the tweet in the profile 'Esto es una prueba Automatica'" width="1920"/>
+                <img src="843b22ca6fa90e9f4d36486b511d869bf115e3944fdcc8a3ba4be60e591737a2.png" title="Then you should see the tweet in the profile 'Esto es una prueba Automatica'" width="1920"/>
+                <img src="06f4ebd3487540ffec79f43061e1f134abf4a9519c45886a01917a88765ff76e.png" title="Then public tweet should be 'Esto es una prueba Automatica'" width="1920"/>
+                <img src="06f4ebd3487540ffec79f43061e1f134abf4a9519c45886a01917a88765ff76e.png" title="Daniel clicks on Delete" width="1920"/>
+                <img src="fb839815c467d02878cdf5c1674e57f1606c18f41c7d4eab6ab05a194a8fa6d5.png" title="Daniel clicks on Delete" width="1920"/>
+                <img src="fb839815c467d02878cdf5c1674e57f1606c18f41c7d4eab6ab05a194a8fa6d5.png" title="Daniel clicks on Delete tweet" width="1920"/>
+                <img src="9859cea796b526bdf19bb8a21a814cb0de0e18af73f2c9609b6658919bb949b9.png" title="Daniel clicks on Delete tweet" width="1920"/>
+                <img src="9859cea796b526bdf19bb8a21a814cb0de0e18af73f2c9609b6658919bb949b9.png" title="Daniel clicks on Delete tweet" width="1920"/>
+                <img src="7ab507cea4b2004a73e83c654058b8945e345a95b4feb1b49fc52db027afab99.png" title="Daniel clicks on Delete tweet: <span class='success-color'>SUCCESS</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.11</span>
+</div>
+</body>
+</html>
